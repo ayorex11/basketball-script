@@ -46,7 +46,7 @@ def check_basketball_matches():
             away_score = match['awayScore']['current']
             score_difference = abs(home_score - away_score)
 
-            if score_difference =< 6:
+            if score_difference <= 6:
                 subject = f"Halftime Alert: {home_team} vs {away_team}"
                 body = f"Halftime Score:\n{home_team}: {home_score}\n{away_team}: {away_score}\nScore Difference: {score_difference}"
                 send_email(subject, body)
